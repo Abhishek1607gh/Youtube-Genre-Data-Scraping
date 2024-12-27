@@ -12,7 +12,6 @@ pip install google-api-python-client pandas youtube-transcript-api
 from googleapiclient.discovery import build
 import pandas as pd
 
-api_key = 'AIzaSyDq2CZFXmigroLycxzXxJXJoChqI3Tkgt8'
 youtube = build('youtube', 'v3', developerKey= api_key)
 
 def fetch_videos_by_genre(genre, max_results=500):
